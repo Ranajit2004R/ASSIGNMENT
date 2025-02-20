@@ -1,0 +1,66 @@
+/* Calculator Styles */
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(6, 60px);
+    gap: 10px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .calculator .display {
+    grid-column: span 4;
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 24px;
+    border-radius: 5px;
+  }
+
+  .calculator .key {
+    background-color: #555;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+
+  .calculator .key:hover {
+    background-color: #777;
+    transform: scale(1.1);
+  }
+
+  .calculator .key.operator {
+    background-color: #ff9500;
+  }
+
+  .calculator .key.operator:hover {
+    background-color: #ffaa33;
+  }
+
+  .calculator .key.equal {
+    background-color: #34c759;
+    grid-column: span 1;
+  }
+
+  .calculator .key.equal:hover {
+    background-color: #4cd964;
+  }
+
+  /* Animation for Calculator Keys */
+  @keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+  .calculator .key:hover {
+    animation: bounce 0.3s ease;
+  }
