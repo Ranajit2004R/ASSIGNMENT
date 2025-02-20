@@ -3,18 +3,21 @@ document.body.style.display = "flex";
 document.body.style.justifyContent = "center";
 document.body.style.alignItems = "center";
 document.body.style.height = "100vh";
-document.body.style.backgroundColor = "black";
+// document.body.style.backgroundColor = "black";
+document.body.style.border ="1px solid white"
 
 let calculator = document.getElementById("calculator");
 calculator.style.width = "250px";
 calculator.style.padding = "20px";
-calculator.style.backgroundColor = "blue";
+calculator.style.backgroundColor = "black";
 calculator.style.borderRadius = "10px";
 calculator.style.textAlign = "center";
 
 let display = document.getElementById("display");
 display.style.width = "100%";
 display.style.height = "40px";
+display.style.backgroundColor ="white";
+ display.style.font="solid black";
 display.style.fontSize = "20px";
 display.style.marginBottom = "10px";
 display.style.textAlign = "right";
@@ -40,8 +43,8 @@ buttons.forEach(text => {
     button.style.fontSize = "18px";
     button.style.border = "none";
     button.style.cursor = "pointer";
-    button.style.backgroundColor = "black";
-    button.style.color = "yellow";
+    button.style.backgroundColor = "white";
+    button.style.color = " black";
     button.style.borderRadius = "5px";
     button.addEventListener("click", () => buttonClick(text));
     buttonsContainer.appendChild(button);
