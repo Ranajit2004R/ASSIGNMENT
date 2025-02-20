@@ -1,9 +1,7 @@
-// Apply styles using JavaScript
 document.body.style.display = "flex";
 document.body.style.justifyContent = "center";
 document.body.style.alignItems = "center";
 document.body.style.height = "100vh";
-// document.body.style.backgroundColor = "black";
 document.body.style.border ="1px solid white"
 
 let calculator = document.getElementById("calculator");
@@ -17,7 +15,7 @@ let display = document.getElementById("display");
 display.style.width = "100%";
 display.style.height = "40px";
 display.style.backgroundColor ="white";
- display.style.font="solid black";
+
 display.style.fontSize = "20px";
 display.style.marginBottom = "10px";
 display.style.textAlign = "right";
